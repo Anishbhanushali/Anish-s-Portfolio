@@ -1,0 +1,499 @@
+*{
+            margin:0;
+            padding:0;
+            line-height:normal;
+        }
+        body{
+            background-color:#00027c;
+        }
+        .navbar{
+            font-weight:bold;
+            color:white;
+            background-color:#0002a3;
+            font-family: 'Prompt', sans-serif;
+            border-radius:0px 0px 5px 5px;  
+            padding:0% 20% 0% 20%;     
+        }
+        .navbar-nav{                      
+            align-items:center;
+        }
+        .nav-link{
+            font-weight:bold;
+            color:white;
+            font-family: 'Ubuntu', sans-serif;            
+        }        
+        .nav-link:hover{
+            font-weight:bold;
+            color:#888894;
+            transform:scale(1.1);
+        }
+        .navbar-toggler{
+            border:0;
+        }
+        .navbar-toggler:focus, 
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus{
+            outline:none;
+            box-shadow:none;
+            border:0;
+        }
+        .toggler-icon{
+            background-color:white;
+            display:block;
+            transition:all 0.3s ease-out;
+        }
+        .navbar-toggler .top{
+            height:3px;
+            width:26px;
+            margin:1px;
+        }
+        .navbar-toggler .middle{
+            height:3px;
+            width:auto;
+        }
+        .navbar-toggler .last{
+            height:3px;
+            width:26px;
+        }
+        .middle{
+            margin:4px auto;
+        }
+        .navbar-toggler .top{
+            transform:rotate(45deg);
+            transform-origin:10% 10%;
+        }
+        .navbar-toggler .middle{
+            opacity:0;
+            filter:alpha(opacity=0);            
+        }
+        .navbar-toggler .last{
+            transform:rotate(-45deg);
+            transform-origin:10% 10%;
+        }
+        
+        .navbar-toggler.collapsed .top{
+            transform:rotate(0deg);
+            margin:0px;
+            width:28px;     
+        }
+        .navbar-toggler.collapsed .middle{
+            opacity:1;
+            filter:alpha(opacity=100); 
+            width:28px;        
+        }
+        .navbar-toggler.collapsed .last{
+            transform:rotate(0deg);  
+            width:28px;      
+        }
+        .navbar-toggler.collapsed .toggler-icon{
+            background-color:white;
+        }
+        
+        #home{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            width:100vw;
+        }
+        #lhome{
+            font-family: 'Ubuntu', sans-serif;
+            width:40vw;                                  
+        }
+        .info1{
+            font-size:2.4rem;
+            color:white;
+            width:100%;
+            opacity:0;
+            transition:all 2s ease-in-out;
+            animation-name:two;
+            animation-duration:2s;
+            animation-iteration-count:1;
+            animation-fill-mode:forwards; 
+        }
+        #info{
+            font-family: 'Prompt', sans-serif;
+            font-size:1.3rem;
+            color:#8c8c8c;                                   
+        }
+        #rhome{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:10rem;
+            padding:5%;            
+        }
+        #image{
+            height:20rem;
+            width:14rem;
+            filter:drop-shadow(1px 2px 13px #abbaba);
+        }
+        .hr{
+            text-align:center;
+            height:2px;
+            width:100vw;
+            background-color:#6251f3;
+        }
+        #contact{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:100vw;
+        }
+        .container{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            
+        }
+        .incon{
+            font-size:1.7rem;
+            color:white;
+            margin:2%;
+            font-family:'Ubuntu', sans-serif;
+        }
+        #form{
+            font-family:'Prompt', sans-serif;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column; 
+            width:80vw;           
+        }
+        #in1{
+            height:3rem;
+            width:90%;
+            margin:5px;
+            border:2px solid black;
+            border-radius:4px;
+            padding:4px;
+        }
+        #in2{
+            height:3rem;
+            width:90%;
+            margin:5px;
+            border:2px solid black;
+            border-radius:4px;
+            padding:4px;
+        }
+        #in3{
+            height:6rem;
+            width:90%;
+            margin:10px;
+            border:2px solid black;
+            border-radius:4px;
+            padding:4px;
+        }
+        #contactin{
+            margin:10px;
+            color:#a4a4a4;
+            font-size:1.3rem;
+            text-align:center;
+            font-family:'Ubuntu';
+        }
+        #in5{
+            height:2.2rem;
+            width:10%;
+            margin:10px;
+            border:2px solid black;
+            border-radius:6px;
+            background-color:#00c713f9;
+            padding:4px;
+            margin-left:70%;
+            font-size:1rem;
+            cursor:pointer;
+        }
+        #in5:active{
+            background-color:#797979f9;
+            transform:scale(1.1);
+            color:white;
+            border:2px solid white;
+        }
+        #in5:hover{
+            background-color:#797979f9;
+            transform:scale(1.1);
+        }
+        #foot{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            background-color:#0002a3;
+            font-family:'Ubuntu', sans-serif;
+            padding:2%;
+            height:auto;
+        }
+        #footin{
+            color:white;
+            font-size:1rem;
+        }
+        #logos{
+            display:flex;
+            justify-content:center;
+            margin:10px;
+        }
+        .lg{
+            height:1.5rem;
+            width:1.5rem;
+            margin:10px;
+        }
+        #cc{
+           color:white;
+           font-size:0.8rem; 
+        }
+        #about{
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           width:100vw;
+           
+        }
+        #abt{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:7%;
+            width:100vw;  
+            border:2px solid black;
+            border-radius:7px;
+            margin-bottom:10px;        
+        }
+        #abtimg{
+            height:30rem;
+            width:30rem;
+            border-radius:10px;
+            margin-left:5%;          
+        }
+        #abtp{
+            color:#969696;
+            font-size:1.5rem;
+            width:50%;
+            text-align:center; 
+            word-spacing:2px;        
+                
+        }
+        .hire{
+            text-decoration:none;
+            height:2.2rem;
+            width:10%;
+            margin:10px;
+            border:2px solid black;
+            border-radius:6px;
+            background-color:#00c713f9;
+            padding:4px;            
+            font-size:1rem;
+            color:black;
+            cursor:pointer;
+            font-family:'Ubuntu', sans-serif;
+        }
+        .hire:hover{
+            text-decoration:none;
+            height:2.2rem;
+            width:10%;
+            margin:10px;
+            border:2px solid black;
+            border-radius:6px;
+            background-color:#a9a9a9;                       
+            font-size:1rem;
+            color:white;
+            cursor:pointer;
+            font-family:'Ubuntu', sans-serif;
+        }
+        #msg{
+            color:#40ff4e;
+            font-size:0.6rem;
+            margin:5px;
+        }
+        .navbar-brand{
+            position:relative;
+            top:-30px;
+            transition:all 2s ease-in-out;
+            animation-name:one;
+            animation-duration:3s;
+            animation-iteration-count:1;
+            animation-fill-mode:forwards;
+            opacity:0;
+        }
+        @keyframes one{
+            to{
+                top:0px;
+                opacity:1;
+            } 
+        }
+        @keyframes two{
+            to{
+                opacity:1;
+            }
+        } 
+        @media (width < 800px){
+            .navbar{
+                padding:2%; 
+            }
+            #lhome{
+                font-family: 'Ubuntu', sans-serif;
+                width:100%;                
+                padding:10%;                      
+            }
+            .info1{
+                font-size:1.5rem;
+                color:white;
+                width:100%;
+                opacity:0;
+            }
+            #info{
+                font-size:1rem;
+            }
+            #image{
+                height:17rem;
+                width:12rem;
+            }
+            #home{
+                flex-direction:column;
+            }
+            .incon{
+                font-size:1.1rem;
+                margin:5px;
+            }
+            #form{
+                font-size:0.6rem;
+            }
+            #in1:hover{
+                border:3px solid grey;
+            }
+            #in1{
+                height:2rem;
+                width:100%;    
+            }
+            #in2{
+                height:2rem;
+                width:100%;
+                margin:5px;            
+            }
+            #in3{
+                height:5rem;
+                width:100%;            
+            }
+            #contactin{
+                font-size:0.8rem;
+            }
+            #in5{
+                font-size:0.7rem;
+                height:1.7rem;
+                width:25%;
+            }
+            #footin{            
+                font-size:0.8rem;
+            }
+            #logos{             
+                margin:10px;
+            }
+            .lg{
+                height:1.4rem;
+                width:1.4rem;
+                margin:10px;
+            }
+            #cc{
+                color:white;
+                font-size:0.7rem; 
+            }
+            #about{
+                height:auto;                
+            }
+            #abt{
+                display:flex;
+                justify-content:center;              
+                flex-direction:column; 
+                width:100vw; 
+                border:none;     
+            }            
+            #abtimg{
+                height:18rem;
+                margin-left:8%;
+                margin-right:7%;
+                width:80%;
+                border-radius:10px;
+                             
+            }
+            #abtp{
+                font-size:1rem;
+                width:95%;
+                margin:5px;
+                padding:1%;
+                border:2px solid black;
+                border-radius:4px;
+                font-family: 'Ubuntu', sans-serif;
+                word-spacing:3px;
+            }
+        @media (width > 1600){
+            .navbar{
+                padding:5%;                
+            }
+            .info1{
+                font-size:3rem;
+                color:white;
+                width:100%;
+                opacity:0;
+            }
+            #info{
+                font-size:1.7rem;
+                
+            }
+            #image{
+                height:25rem;
+                width:17rem;
+            }
+            .incon{
+                font-size:3rem;
+                margin:5px;
+            }
+            #in1{
+                height:4rem;
+                width:80%;    
+            }
+            #in2{
+                height:4rem;
+                width:80%;
+                margin:5px;            
+            }
+            #in3{
+                height:8rem;
+                width:80%;            
+            }
+            #contactin{
+                font-size:2rem;
+            }
+            #in5{
+                font-size:1.2rem;
+                height:2rem;
+                width:20%;
+            }
+            #form{
+                font-size:1.6rem;
+            }
+            #abtp{
+                font-size:2rem;
+                width:95%;
+                margin:5px;
+                padding:1%;
+                border:2px solid black;
+                border-radius:4px;
+                font-family: 'Ubuntu', sans-serif;
+                word-spacing:3px;
+            }
+            #footin{            
+                font-size:1.3rem;
+            }
+            #logos{             
+                margin:10px;
+            }
+            .lg{
+                height:1.8rem;
+                width:1.8rem;
+                margin:15px;
+            }
+            #cc{
+                color:white;
+                font-size:1.2rem; 
+            }
+          }
+        }                     
